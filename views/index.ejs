@@ -1,0 +1,274 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NZZ Audio: Verbesserungen</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
+        <style>
+
+           
+        @media screen {
+            @font-face {
+                font-family: 'IBM Plex Sans';
+                src: url("https://d33wubrfki0l68.cloudfront.net/ae3da6c57aa97bbc18c4a64664e1850afbc6e8d8/cb34f/ibmplexsans.eot");
+                src: url("https://d33wubrfki0l68.cloudfront.net/ae3da6c57aa97bbc18c4a64664e1850afbc6e8d8/cb34f/ibmplexsans.eot#iefix") format('embedded-opentype'), url("https://d33wubrfki0l68.cloudfront.net/87bf59db2240d8c87ef3cb73021e8e52c43ec07c/aef42/ibmplexsans.woff2") format('woff2'), url("https://d33wubrfki0l68.cloudfront.net/3d8b5e77066a62486f97d5f33b1e4c31a8376db4/0212a/ibmplexsans.woff") format('woff'), url("https://d33wubrfki0l68.cloudfront.net/67402bd8fa8054e705e3d9818b27cb19de4154dc/2ff15/ibmplexsans.ttf") format('truetype'), url("https://d33wubrfki0l68.cloudfront.net/8936b2c070186eab75aa59c6d9368b2e3576945e/b9555/ibmplexsans.svg#IBMPlexSans") format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+
+        /* Setup */
+
+        html {}
+
+        html,
+        body {
+            font-family: 'IBM Plex Sans';
+            font-weight: 400;
+            /* Adjust font size */
+            font-size: 80%;
+            -webkit-text-size-adjust: 100%;
+            /* Font varient */
+            font-variant-ligatures: none;
+            -webkit-font-variant-ligatures: none;
+            /* Smoothing */
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+            /* Font Smoothing */
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+            text-rendering: optimizeLegibility !important;
+            -webkit-font-smoothing: antialiased !important;
+            /* Font Basics */
+            color: white;
+            margin: 0;
+        }
+
+        
+
+        a,
+        a:link,
+        a:active,
+        a:visited {
+            text-decoration: none;
+            padding-bottom: 0;
+            background: linear-gradient(to top, #aec6cf  35%, transparent 35%);
+        }
+
+        a:hover {
+            background: #aec6cf ;
+        }
+
+        main {
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10%;
+            margin-top: 10%;
+            width: 80%;
+            max-width: 960px;
+        }
+
+        @media only screen and (min-width: 320px) {
+            html {
+                font-size: 1.3 rem;
+            }
+
+        }
+
+        @media only screen and (min-width: 480px) {}
+
+        @media only screen and (min-width: 768px) {
+            html {
+                font-size: 1.5rem;
+            }
+        }
+
+        }
+
+    
+
+            h1 {
+                font-size: 5em;
+            }
+            h2 {
+                font-size: 1em;
+
+            }
+            body { 
+                padding: 100px;
+            }
+
+            p {
+                padding: 5px;
+                color: black;
+                margin-left: 10px;
+            }
+
+            p span {
+                color: #121A5B;
+                font-size: 200%;
+                margin-left: 10px;
+
+            }
+
+            button {
+                padding: 15px;
+                font-size: 0.7em;
+                background-color: gainsboro !important;
+                border: solid 5px #121A5B !important;
+            }
+
+            input {
+                font-size: 1em;
+                width: 50%;
+                height: 37%;
+                padding: 15px;
+                border: solid 5px #121A5B;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: gainsboro;
+            }
+
+            textarea {
+                font-size: 1em;
+                width: 95%;
+                height: 37%;
+                padding: 15px;
+                border: solid 5px #121A5B;
+                background-color: gainsboro;
+                resize: none;
+            }
+
+            form{
+                padding: 15px;
+            }
+
+            .icon {
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 50px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                text-decoration-line: underline;
+            }
+        
+            .welcome {
+                margin-left: 10px;
+                overflow: hidden;
+            }
+
+            .uk-grid>*>:last-child {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }       
+
+            .footer {
+                margin-top: 50px;
+                text-align: center;
+
+            }
+
+            .uk-button{
+                color: #121A5B;
+            }
+
+            
+            @media only screen and (max-width: 600px) {
+
+           body{
+               padding: 10px;
+
+            } }
+
+        </style>
+    </head>
+    <body>
+            <img class=" uk-hidden@l	uk-hidden@xl uk-hidden@m" style="width: 100%; margin-bottom: 20px" src="http://www.zala.ch/wp-content/uploads/overlay_neuezuercherzeitung.png">
+        <img class="uk-visible@m" style="width: 40%; margin-bottom: 20px" src="http://www.zala.ch/wp-content/uploads/overlay_neuezuercherzeitung.png">
+        <div class="uk-panel">
+            <img style="width: 20%" class="uk-align-left uk-margin-remove-adjacent uk-visible@m" src="https://cdn-images-1.medium.com/max/1200/1*fRt9G2K2yHc2rnyuoHLXgg.png">
+           
+            <div class="uk-grid">
+                <div class="uk-width-1-5">
+                     <img class="icon" src="https://i.postimg.cc/jqQrZVX9/play-icon-2x.png">
+                </div>
+                 <div class="uk-width-4-5">
+                    <p class="welcome">
+                    Herzlichen Dank, dass Sie uns dabei helfen, Fehler in unserem Sprach-Service zu korrigieren und unseren Algorithmus zu trainieren! <a href="#help">Um Artikel hören zu können, müssen Sie die Beta-Funktion in den Einstellungen  <b>aktivieren</b>.</a>
+                     </p>
+                 </div>
+            </div>
+            <div class="uk-grid">
+                 <div class="uk-width-1-5">
+                    <img class="icon" src="https://i.postimg.cc/sDM3dq6K/help.png">
+                </div>
+                <div class="uk-width-4-5">
+                    <p class="welcome">
+                    
+                        Untenstehend finden Sie einen <b>Link zu einem Artikel.</b> Hören Sie diesen in Ihrem Browser oder Ihrer App und erfassen Sie Aussprachefehler im dafür vorgesehenden <b>Feedback-Feld</b>.
+                    
+                        Achtung: Wenn Sie auf "Feedback senden" klicken oder "Enter" drücken, werden Ihre Daten übermittelt und Sie können keine Änderungen mehr vornehmen. <b> Trennen Sie daher die erfassten Fehler bitte mit einem Komma oder Semikolon und nicht mit der Eingabetaste</b>.
+                    </p>
+
+            </div>
+            <div class="uk-grid">
+                    <div class="uk-width-1-5">
+                            <img class="icon" src="https://i.postimg.cc/MTKpcDxG/edit.png">
+                        </div>
+                    <div class="uk-width-4-5">
+                            <p class="welcome">
+                                    <b>Beispiel für ein Feedback:</b> "SAP und AfD werden nicht als Abkürzungen, sondern als Worte sap und aft gesprochen; Gebirgspass wird als Gebirg-Spass ausgesprochen; Neuchâtel wird deutsch ausgesprochen"
+                                </p>
+                    </div>
+
+            </div>   
+            <div class="artikel">
+                <ul class="links">
+                    <p class="link">
+                        <span>Ihr Link: <a href='<%= link.link %>'><%= link.name %></a></span>  
+                    </p>
+                </ul>
+                
+                    <div class="uk-grid">
+                        <div class="uk-width-1-1">
+                                <form action="/links" method="POST">
+                                    <input type="text" placeholder="Geben Sie hier Ihr Feedback ein." name="feedback">
+                                    <input type="text" placeholder="Geben Sie hier Ihr Feedback ein." name="email">
+                                     <input type="hidden" value=<%= link._id %> name="_id">
+                                    <button type="submit" class="uk-button">Feedback senden</button>
+                                  </form>
+            </div>
+        </div>
+        <div class="uk-grid">
+            <div class="uk-width-1-5">
+                <img class="icon" src="https://i.postimg.cc/sDM3dq6K/help.png">
+            </div>
+            <div class="uk-width-4-5">
+                <p id="help" class="welcome">
+                    <b>Ihnen wird auf dem Artikel kein Audio-Icon angezeigt?</b> Da es sich noch um eine Beta-Funktion handelt,  müssen sie diese zuerst in Ihren Einstellungen <b>aktivieren.</b> In der NZZ-App und auf <a href="www.nzz.ch">nzz.ch</a> können Sie die Funktion "Artikel hören" im Menü unter "Beta-Funktionen" aktivieren.
+                    Falls Sie weitere Hilfe benötigen, können wir Ihnen unter <a href="mailto:produktentwicklung@nzz.ch">produktentwicklung@nzz.ch</a> gerne weiter Auskunft geben.
+                </p>
+            </br>
+            </div>
+
+                <div class="uk-container uk-container-center">
+                   <p>© Digitale Produktentwicklung NZZ, 2018</p>
+                </div>
+    </body>
+   
+</html>
